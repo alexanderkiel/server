@@ -1,0 +1,12 @@
+[template]
+src   = "reload"
+dest  = "/app/bin/reload"
+owner = "root"
+group = "root"
+mode  = "0755"
+keys = [
+  "/deis/controller",
+  "/deis/chef",
+]
+check_cmd = "test -e {{ .src }}"
+reload_cmd = "/app/bin/reload"
