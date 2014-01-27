@@ -7,4 +7,3 @@ mode  = "0640"
 keys = [
   "/deis",
 ]
-#reload_cmd = "/app/bin/reload"

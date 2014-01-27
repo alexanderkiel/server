@@ -5,7 +5,7 @@
 cd /app/deis
 
 # run an idempotent database migration
-sudo -u deis ./manage.py syncdb --migrate --noinput
+sudo -E -u deis ./manage.py syncdb --migrate --noinput
 
 # spawn a gunicorn server in the foreground
-sudo -u deis ./manage.py run_gunicorn -b 0.0.0.0 -w 8 -k gevent -t 600 -n deis --log-level debug
+sudo -E -u deis ./manage.py run_gunicorn -b 0.0.0.0 -w 8 -k gevent -t 600 -n deis --log-level debug

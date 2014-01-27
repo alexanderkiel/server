@@ -30,7 +30,7 @@ $(dirname ${BASH_SOURCE[0]})/seed
 confd -onetime -node $ETCD -config-file /app/confd.toml || true
 
 # perform a one-time reload to install check config
-$(dirname ${BASH_SOURCE[0]})/reload
+/usr/local/bin/reload
 
 # spawn the service in the background
 $(dirname ${BASH_SOURCE[0]})/start &
