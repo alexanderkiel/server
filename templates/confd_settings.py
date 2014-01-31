@@ -5,9 +5,6 @@ BUILDER_KEY = "{{ .deis_controller_builderKey }}"
 # the config management module to use in api.models
 CM_MODULE = "{{ .deis_controller_cmModule }}"
 
-# default providers, typically overriden in local_settings to include ec2, etc.
-PROVIDER_MODULES = ('mock', 'digitalocean', 'ec2', 'rackspace', 'static')
-
 # default to sqlite3, but allow postgresql config through envvars
 DATABASES = {
     'default': {
