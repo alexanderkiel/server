@@ -6,7 +6,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise universe" > /etc/apt/sour
 RUN apt-get install -yq python-pip python-dev libpq-dev
 
 # install chef
-RUN apt-get install -yq ruby1.9.1 rubygems sudo
+RUN apt-get install -yq ruby1.9.1 rubygems
 RUN gem install --no-ri --no-rdoc chef
 
 # install requirements before ADD to cache layer and speed build
