@@ -14,7 +14,7 @@ RUN pip install boto==2.23.0 celery==3.1.7 Django==1.6.1 django-allauth==0.15.0 
 
 # clone the project into /app
 RUN apt-get install -yq git
-RUN git clone https://github.com/opdemand/deis.git /app/deis && cd /app/deis && git checkout containerize && true
+RUN git clone https://github.com/opdemand/deis.git /app/deis && cd /app/deis && git checkout containerize
 
 # install python requirements
 RUN pip install -r /app/deis/requirements.txt
