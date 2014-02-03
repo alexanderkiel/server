@@ -2,6 +2,9 @@
 SECRET_KEY = "{{ .deis_controller_secretKey }}"
 BUILDER_KEY = "{{ .deis_controller_builderKey }}"
 
+# registry settings
+REGISTRY_URL = "{{ .deis_registry_protocol }}://{{ .deis_registry_host }}:{{ .deis_registry_port }}"
+
 # the config management module to use in api.models
 CM_MODULE = "{{ .deis_controller_cmModule }}"
 
