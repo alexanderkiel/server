@@ -27,6 +27,9 @@ RUN chown -R deis:deis /app/deis
 # add the current build context to /app
 ADD . /app
 
+# create directory for logs
+RUN mkdir -p /app/deis/logs && chown -R deis:deis /app/deis/logs
+
 # define the execution environment
 CMD ["/app/bin/boot"]
 EXPOSE 8000
