@@ -19,6 +19,9 @@ RUN git clone https://github.com/opdemand/deis.git /app/deis && cd /app/deis && 
 # install python requirements
 RUN pip install -r /app/deis/requirements.txt
 
+# Create static resources
+RUN /app/deis/manage.py collectstatic --settings=deis.settings --noinput
+
 # add a deis user that has passwordless sudo (for now)
 RUN useradd deis --groups sudo --home-dir /app --shell /bin/bash
 RUN sed -i -e 's/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL:ALL) NOPASSWD:ALL/' /etc/sudoers
