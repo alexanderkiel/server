@@ -10,7 +10,7 @@ RUN apt-get install -yq ruby1.9.1 rubygems
 RUN gem install --no-ri --no-rdoc chef
 
 # install requirements before ADD to cache layer and speed build
-RUN pip install boto==2.23.0 celery==3.1.8 Django==1.6.2 django-allauth==0.15.0 django-guardian==1.1.1 django-json-field==0.5.5 django-yamlfield==0.5 djangorestframework==2.3.12 dop==0.1.4 gevent==1.0 gunicorn==18.0 paramiko==1.12.1 psycopg2==2.5.2 pycrypto==2.6.1 python-etcd==0.3.0 pyrax==1.6.2 PyYAML==3.10 redis==2.8.0 South==0.8.4
+RUN pip install boto==2.23.0 celery==3.1.8 Django==1.6.2 django-allauth==0.15.0 django-guardian==1.1.1 django-json-field==0.5.5 django-yamlfield==0.5 djangorestframework==2.3.12 dop==0.1.4 gevent==1.0 gunicorn==18.0 paramiko==1.12.1 psycopg2==2.5.2 pycrypto==2.6.1 python-etcd==0.3.0 pyrax==1.6.2 PyYAML==3.10 redis==2.8.0 static==1.0.2 South==0.8.4
 
 # clone the project into /app
 RUN apt-get install -yq git
