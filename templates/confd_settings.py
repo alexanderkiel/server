@@ -30,4 +30,3 @@ DEIS_LOG_DIR = '/app/logs'
 
 # specify which provider API modules to load
 PROVIDER_MODULES = ('mock', 'digitalocean', 'ec2', 'rackspace', 'vagrant', 'static')
-
