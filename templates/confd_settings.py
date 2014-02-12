@@ -27,3 +27,7 @@ CELERY_RESULT_BACKEND = BROKER_URL
 
 # move log directory out of /app/deis
 DEIS_LOG_DIR = '/app/logs'
+
+# specify which provider API modules to load
+PROVIDER_MODULES = ('mock', 'digitalocean', 'ec2', 'rackspace', 'vagrant', 'static')
+
