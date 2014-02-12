@@ -24,3 +24,6 @@ DATABASES = {
 # configure cache
 BROKER_URL = 'redis://{{ .deis_cache_host }}:{{ .deis_cache_port }}/0'
 CELERY_RESULT_BACKEND = BROKER_URL
+
+# move log directory out of /app/deis
+DEIS_LOG_DIR = '/app/logs'
