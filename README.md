@@ -1,16 +1,17 @@
-# Deis Builder
+# Deis Server
 
 A Docker image containing a REST API and web server, for use in the [Deis](http://deis.io) open source PaaS.
 
-[![image](https://d207aa93qlcgug.cloudfront.net/img/icons/framed-icon-checked-repository.svg)](https://index.docker.io/u/deis/server/)
-
-[**Trusted Build**](https://index.docker.io/u/deis/server/)
+[**deis/server @ Docker Index**](https://index.docker.io/u/deis/server/)
 
 This Docker image is based on the trusted build [deis/base](https://index.docker.io/u/deis/base/), which itself is based on the official [ubuntu:12.04](https://index.docker.io/_/ubuntu/) base image.
 
+### Tagged Versions
+- deis/server:**v0.1.0**
+
 ## Usage
 
-TBD
+Coming Soon!
 
 ## License
 
