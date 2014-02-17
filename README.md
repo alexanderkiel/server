@@ -6,6 +6,8 @@ A Docker image containing a REST API and web server, for use in the [Deis](http:
 
 This Docker image is based on the trusted build [deis/base](https://index.docker.io/u/deis/base/), which itself is based on the official [ubuntu:12.04](https://index.docker.io/_/ubuntu/) base image.
 
+Please add any issues you find with this software to the parent [Deis project](https://github.com/opdemand/deis/issues).
+
 ### Tagged Versions
 - deis/server:**v0.1.0**
 
