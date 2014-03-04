@@ -1,4 +1,4 @@
-FROM deis/base
+FROM deis/base:latest
 MAINTAINER Gabriel A. Monroy <gabriel@opdemand.com>
 
 # install required system packages
