@@ -2,7 +2,6 @@ FROM deis/base
 MAINTAINER Gabriel A. Monroy <gabriel@opdemand.com>
 
 # install required system packages
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise universe" > /etc/apt/sources.list.d/universe.list && apt-get update
 RUN apt-get install -yq python-pip python-dev libpq-dev
 
 # install chef
